@@ -1,24 +1,481 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="OHt-wM-Js8">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="ComicsCarToon.ttf">
+            <string>ComicsCarToon</string>
+        </array>
+    </customFonts>
     <scenes>
-        <!--View Controller-->
+        <!--Adivino View Controller-->
+        <scene sceneID="5HD-1V-sQu">
+            <objects>
+                <viewController id="718-G9-a4G" customClass="AdivinoViewController" customModule="Adivinator" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bgr-An-cSo">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="egipto.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="AtY-gC-MZA">
+                                <rect key="frame" x="0.0" y="64" width="647" height="652"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0lM-2Q-W4h" customClass="PressableButton" customModule="SwiftyButton">
+                                <rect key="frame" x="16" y="475" width="156" height="67"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="156" id="3Tm-1l-jRw"/>
+                                    <constraint firstAttribute="height" constant="67" id="mnk-1L-JTZ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ComicsCarToon" family="ComicsCarToon" pointSize="33"/>
+                                <state key="normal" title="SI">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="sii:" destination="718-G9-a4G" eventType="touchUpInside" id="e4D-U0-NdV"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SMZ-SP-S0J" customClass="PressableButton" customModule="SwiftyButton">
+                                <rect key="frame" x="203" y="475" width="156" height="67"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="67" id="Ogh-xQ-zMh"/>
+                                    <constraint firstAttribute="width" constant="156" id="Q1b-R9-RDn"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ComicsCarToon" family="ComicsCarToon" pointSize="33"/>
+                                <state key="normal" title="NO">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="noo:" destination="718-G9-a4G" eventType="touchUpInside" id="h8k-HT-5W4"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wwk-oo-89O">
+                                <rect key="frame" x="16" y="173" width="343" height="294"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="A7I-IP-eOf">
+                                        <rect key="frame" x="20" y="50" width="303" height="161"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="161" id="UkF-Xu-qPu"/>
+                                        </constraints>
+                                    </imageView>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dmk-SR-pIh">
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="294"/>
+                                        <string key="text">Instrucciones: Piensa en un número del 1 al 63. A continuación se te mostrará series de números. Debes ver si el número en el que pensaste esta allí, si está presiona "SI", de lo contrario "NO". Tienes que hacerlo conciente para que funcione el juego ¿estas list@?</string>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="ComicsCarToon" family="ComicsCarToon" pointSize="26"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.0" green="0.41886384500000001" blue="0.57780116579999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="Dmk-SR-pIh" firstAttribute="leading" secondItem="Wwk-oo-89O" secondAttribute="leading" id="4el-5m-evO"/>
+                                    <constraint firstAttribute="trailing" secondItem="Dmk-SR-pIh" secondAttribute="trailing" id="EiY-bu-9ZB"/>
+                                    <constraint firstItem="A7I-IP-eOf" firstAttribute="leading" secondItem="Wwk-oo-89O" secondAttribute="leading" constant="20" id="IEs-1E-3p6"/>
+                                    <constraint firstItem="Dmk-SR-pIh" firstAttribute="top" secondItem="Wwk-oo-89O" secondAttribute="top" id="OAg-Bw-mcK"/>
+                                    <constraint firstAttribute="bottom" secondItem="Dmk-SR-pIh" secondAttribute="bottom" id="V1h-6D-smy"/>
+                                    <constraint firstAttribute="width" constant="343" id="duY-hL-77P"/>
+                                    <constraint firstAttribute="trailing" secondItem="A7I-IP-eOf" secondAttribute="trailing" constant="20" id="jtd-BY-hVN"/>
+                                    <constraint firstAttribute="height" constant="294" id="rcG-aL-ASY"/>
+                                    <constraint firstItem="A7I-IP-eOf" firstAttribute="top" secondItem="Wwk-oo-89O" secondAttribute="top" constant="50" id="x2b-GH-lDV"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FAP-eS-XcC" customClass="PressableButton" customModule="SwiftyButton">
+                                <rect key="frame" x="103" y="550" width="156" height="67"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="156" id="0oO-lO-rQm"/>
+                                    <constraint firstAttribute="height" constant="67" id="IX7-C5-OOu"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ComicsCarToon" family="ComicsCarToon" pointSize="33"/>
+                                <state key="normal" title="Salir">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="reset:" destination="718-G9-a4G" eventType="touchUpInside" id="ToT-yZ-SbK"/>
+                                    <action selector="sii:" destination="718-G9-a4G" eventType="touchUpInside" id="cco-Fs-5rM"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Wwk-oo-89O" firstAttribute="top" secondItem="Y7O-nf-4oK" secondAttribute="top" constant="109" id="1vf-Uh-GSg"/>
+                            <constraint firstItem="Y7O-nf-4oK" firstAttribute="trailing" secondItem="Wwk-oo-89O" secondAttribute="trailing" constant="16" id="3XD-kz-QlB"/>
+                            <constraint firstItem="SMZ-SP-S0J" firstAttribute="top" secondItem="Wwk-oo-89O" secondAttribute="bottom" constant="8" id="6Nx-e1-iZt"/>
+                            <constraint firstItem="FAP-eS-XcC" firstAttribute="top" secondItem="0lM-2Q-W4h" secondAttribute="bottom" constant="8" id="8PB-Lx-xRt"/>
+                            <constraint firstItem="0lM-2Q-W4h" firstAttribute="top" secondItem="Wwk-oo-89O" secondAttribute="bottom" constant="8" id="BxU-TR-bSq"/>
+                            <constraint firstAttribute="bottom" secondItem="AtY-gC-MZA" secondAttribute="bottom" constant="-49" id="Gda-U8-LnF"/>
+                            <constraint firstAttribute="trailing" secondItem="AtY-gC-MZA" secondAttribute="trailing" constant="-272" id="H5r-hd-dWG"/>
+                            <constraint firstItem="AtY-gC-MZA" firstAttribute="leading" secondItem="Y7O-nf-4oK" secondAttribute="leading" id="OPi-M3-amJ"/>
+                            <constraint firstItem="Wwk-oo-89O" firstAttribute="leading" secondItem="Y7O-nf-4oK" secondAttribute="leading" constant="16" id="PTb-OE-yNR"/>
+                            <constraint firstItem="FAP-eS-XcC" firstAttribute="leading" secondItem="Y7O-nf-4oK" secondAttribute="leading" constant="103" id="U8K-dF-JXe"/>
+                            <constraint firstItem="0lM-2Q-W4h" firstAttribute="leading" secondItem="Y7O-nf-4oK" secondAttribute="leading" constant="16" id="WLq-73-EXS"/>
+                            <constraint firstItem="Y7O-nf-4oK" firstAttribute="trailing" secondItem="SMZ-SP-S0J" secondAttribute="trailing" constant="16" id="daZ-Ul-1kr"/>
+                            <constraint firstItem="AtY-gC-MZA" firstAttribute="top" secondItem="Y7O-nf-4oK" secondAttribute="top" id="nxg-0E-bxM"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Y7O-nf-4oK"/>
+                    </view>
+                    <connections>
+                        <outlet property="btn_no" destination="SMZ-SP-S0J" id="1wP-UW-iWw"/>
+                        <outlet property="btn_reset" destination="FAP-eS-XcC" id="9j6-pL-7hc"/>
+                        <outlet property="btn_si" destination="0lM-2Q-W4h" id="KMR-nY-fC4"/>
+                        <outlet property="carta" destination="A7I-IP-eOf" id="fKs-Mz-ZYL"/>
+                        <outlet property="texto" destination="Dmk-SR-pIh" id="t9e-PB-OcJ"/>
+                        <outlet property="view_content" destination="Wwk-oo-89O" id="VTt-oC-FYV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EcG-gb-Qdq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-34.399999999999999" y="-656.22188905547227"/>
+        </scene>
+        <!--Mod View Controller-->
+        <scene sceneID="p7a-YH-8Lc">
+            <objects>
+                <viewController id="Eka-xp-nnh" customClass="ModViewController" customModule="Adivinator" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="LZF-7w-U97">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="egipto.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="UfG-qO-1tx">
+                                <rect key="frame" x="0.0" y="64" width="647" height="652"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Selecciona Modo De Juego :v" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jYk-Q0-h1B">
+                                <rect key="frame" x="0.0" y="174" width="375" height="110"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="110" id="fiF-uG-EfH"/>
+                                </constraints>
+                                <color key="textColor" red="0.0" green="0.41886384500000001" blue="0.57780116579999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="ComicsCarToon" family="ComicsCarToon" pointSize="44"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6k3-kf-olo" customClass="PressableButton" customModule="SwiftyButton">
+                                <rect key="frame" x="68" y="332" width="238" height="67"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="67" id="G2n-co-Fh3"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ComicsCarToon" family="ComicsCarToon" pointSize="33"/>
+                                <state key="normal" title="Yo adivino">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="718-G9-a4G" kind="show" id="DJe-mW-yO3"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hWX-5h-Dnn" customClass="PressableButton" customModule="SwiftyButton">
+                                <rect key="frame" x="68" y="425" width="238" height="67"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="67" id="5Nr-JV-t7j"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ComicsCarToon" family="ComicsCarToon" pointSize="33"/>
+                                <state key="normal" title="Tú adivinas">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="FVt-xo-GUg" kind="show" id="0uA-0b-8M9"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="UfG-qO-1tx" secondAttribute="bottom" constant="-49" id="1Gd-hm-I6R"/>
+                            <constraint firstItem="UfG-qO-1tx" firstAttribute="top" secondItem="Nm3-se-ukA" secondAttribute="top" id="5LZ-3o-l6e"/>
+                            <constraint firstItem="jYk-Q0-h1B" firstAttribute="trailing" secondItem="Nm3-se-ukA" secondAttribute="trailing" id="BOW-Zw-iTw"/>
+                            <constraint firstItem="jYk-Q0-h1B" firstAttribute="top" secondItem="Nm3-se-ukA" secondAttribute="top" constant="110" id="KUL-2B-F0E"/>
+                            <constraint firstItem="Nm3-se-ukA" firstAttribute="trailing" secondItem="hWX-5h-Dnn" secondAttribute="trailing" constant="69" id="TES-2d-0QF"/>
+                            <constraint firstItem="hWX-5h-Dnn" firstAttribute="leading" secondItem="Nm3-se-ukA" secondAttribute="leading" constant="68" id="TtV-cF-eHA"/>
+                            <constraint firstItem="jYk-Q0-h1B" firstAttribute="leading" secondItem="Nm3-se-ukA" secondAttribute="leading" id="Z2j-Rv-fRh"/>
+                            <constraint firstItem="6k3-kf-olo" firstAttribute="leading" secondItem="Nm3-se-ukA" secondAttribute="leading" constant="68" id="ZAg-8n-Ddg"/>
+                            <constraint firstAttribute="trailing" secondItem="UfG-qO-1tx" secondAttribute="trailing" constant="-272" id="ZDJ-3Q-InV"/>
+                            <constraint firstItem="hWX-5h-Dnn" firstAttribute="top" secondItem="6k3-kf-olo" secondAttribute="bottom" constant="26" id="cPb-Ev-ygJ"/>
+                            <constraint firstItem="UfG-qO-1tx" firstAttribute="leading" secondItem="Nm3-se-ukA" secondAttribute="leading" id="jgT-iX-2ZI"/>
+                            <constraint firstItem="6k3-kf-olo" firstAttribute="top" secondItem="jYk-Q0-h1B" secondAttribute="bottom" constant="48" id="luo-fg-yTf"/>
+                            <constraint firstItem="Nm3-se-ukA" firstAttribute="trailing" secondItem="6k3-kf-olo" secondAttribute="trailing" constant="69" id="x8I-fT-SKT"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Nm3-se-ukA"/>
+                    </view>
+                    <connections>
+                        <outlet property="btn1" destination="6k3-kf-olo" id="621-yI-Ttf"/>
+                        <outlet property="btn2" destination="hWX-5h-Dnn" id="Vxm-Ua-Uzz"/>
+                        <outlet property="view_content" destination="jYk-Q0-h1B" id="Hyg-R8-L1z"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="df2-zK-KOn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1057" y="-656"/>
+        </scene>
+        <!--Adivina View Controller-->
+        <scene sceneID="TQF-qU-Kv9">
+            <objects>
+                <viewController id="FVt-xo-GUg" customClass="AdivinaViewController" customModule="Adivinator" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="U8H-JN-H4w">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="egipto.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="8qu-h3-ZHl">
+                                <rect key="frame" x="0.0" y="64" width="647" height="652"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cora1.png" translatesAutoresizingMaskIntoConstraints="NO" id="Ej9-wx-vbq">
+                                <rect key="frame" x="329" y="75" width="30" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="30" id="9JG-hT-NFi"/>
+                                    <constraint firstAttribute="height" constant="30" id="syE-s6-RQo"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cora1.png" translatesAutoresizingMaskIntoConstraints="NO" id="c6T-Ug-wex">
+                                <rect key="frame" x="291" y="75" width="30" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="30" id="o85-5W-jJD"/>
+                                    <constraint firstAttribute="height" constant="30" id="yO2-WG-Hln"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cora1.png" translatesAutoresizingMaskIntoConstraints="NO" id="qkO-5v-mxi">
+                                <rect key="frame" x="253" y="75" width="30" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="NgN-54-KAK"/>
+                                    <constraint firstAttribute="width" constant="30" id="VDL-34-iHb"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="genioa.png" translatesAutoresizingMaskIntoConstraints="NO" id="JX9-xv-BEa">
+                                <rect key="frame" x="-15" y="361" width="243" height="255"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="255" id="8Ew-Jr-EAh"/>
+                                    <constraint firstAttribute="width" constant="243" id="OI7-uP-VFa"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="globo1.png" translatesAutoresizingMaskIntoConstraints="NO" id="XmZ-MN-qh8">
+                                <rect key="frame" x="119" y="164" width="240" height="230"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="ad9-Sg-wqf"/>
+                                    <constraint firstAttribute="height" constant="230" id="qRi-Kl-cgT"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ESCRIBE AQUI :v" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0ff-D5-rc6">
+                                <rect key="frame" x="16" y="81" width="200" height="19"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="ho2-xb-L1x"/>
+                                    <constraint firstAttribute="height" constant="19" id="zuo-PG-5Ta"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ComicsCarToon" family="ComicsCarToon" pointSize="22"/>
+                                <color key="textColor" red="0.0" green="0.41886384500000001" blue="0.57780116579999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3ld-JM-F8M">
+                                <rect key="frame" x="15" y="105" width="178" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="178" id="lOs-XH-9DW"/>
+                                    <constraint firstAttribute="height" constant="30" id="yae-Um-nPx"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="ComicsCarToon" family="ComicsCarToon" pointSize="19"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad" keyboardAppearance="light" returnKeyType="done"/>
+                            </textField>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Adivina el número del 0 al 15 tienes tres vidas" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t9c-pk-bcn">
+                                <rect key="frame" x="135" y="196" width="192" height="131"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="131" id="4pF-vI-ITn"/>
+                                    <constraint firstAttribute="width" constant="192" id="QsK-mX-Cgr"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ComicsCarToon" family="ComicsCarToon" pointSize="28"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aIp-TX-Q0F" customClass="PressableButton" customModule="SwiftyButton">
+                                <rect key="frame" x="195" y="562" width="160" height="67"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="160" id="7I0-la-fm6"/>
+                                    <constraint firstAttribute="height" constant="67" id="P46-b1-96o"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ComicsCarToon" family="ComicsCarToon" pointSize="33"/>
+                                <state key="normal" title="Reiniciar">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="reiniciar:" destination="FVt-xo-GUg" eventType="touchUpInside" id="8IS-tU-S3d"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Ej9-wx-vbq" firstAttribute="leading" secondItem="c6T-Ug-wex" secondAttribute="trailing" constant="8" id="1PA-nC-oWm"/>
+                            <constraint firstItem="0ff-D5-rc6" firstAttribute="top" secondItem="Cc5-io-eOM" secondAttribute="top" constant="17" id="2Oz-FQ-A7k"/>
+                            <constraint firstItem="JX9-xv-BEa" firstAttribute="top" secondItem="t9c-pk-bcn" secondAttribute="bottom" constant="34" id="2TQ-Qo-exl"/>
+                            <constraint firstItem="3ld-JM-F8M" firstAttribute="leading" secondItem="Cc5-io-eOM" secondAttribute="leading" constant="15" id="7ee-Hw-hgF"/>
+                            <constraint firstItem="Cc5-io-eOM" firstAttribute="bottom" secondItem="aIp-TX-Q0F" secondAttribute="bottom" constant="38" id="DSm-2f-zMJ"/>
+                            <constraint firstAttribute="bottom" secondItem="8qu-h3-ZHl" secondAttribute="bottom" constant="-49" id="M3o-SB-rt4"/>
+                            <constraint firstItem="Cc5-io-eOM" firstAttribute="trailing" secondItem="Ej9-wx-vbq" secondAttribute="trailing" constant="16" id="NSt-wV-1Kv"/>
+                            <constraint firstItem="Cc5-io-eOM" firstAttribute="bottom" secondItem="JX9-xv-BEa" secondAttribute="bottom" constant="51" id="Ohb-ny-vjW"/>
+                            <constraint firstItem="Cc5-io-eOM" firstAttribute="bottom" secondItem="XmZ-MN-qh8" secondAttribute="bottom" constant="273" id="U78-VT-xFv"/>
+                            <constraint firstItem="8qu-h3-ZHl" firstAttribute="top" secondItem="Cc5-io-eOM" secondAttribute="top" id="Z8g-WO-Wb4"/>
+                            <constraint firstItem="8qu-h3-ZHl" firstAttribute="leading" secondItem="Cc5-io-eOM" secondAttribute="leading" id="ZQc-4P-Oln"/>
+                            <constraint firstItem="Cc5-io-eOM" firstAttribute="trailing" secondItem="aIp-TX-Q0F" secondAttribute="trailing" constant="20" id="bv2-Rm-Vgb"/>
+                            <constraint firstItem="Ej9-wx-vbq" firstAttribute="top" secondItem="Cc5-io-eOM" secondAttribute="top" constant="11" id="dqe-76-T3V"/>
+                            <constraint firstItem="Cc5-io-eOM" firstAttribute="trailing" secondItem="t9c-pk-bcn" secondAttribute="trailing" constant="48" id="eQl-bL-kbf"/>
+                            <constraint firstItem="JX9-xv-BEa" firstAttribute="leading" secondItem="Cc5-io-eOM" secondAttribute="leading" constant="-15" id="fUK-2H-xSO"/>
+                            <constraint firstItem="Cc5-io-eOM" firstAttribute="trailing" secondItem="XmZ-MN-qh8" secondAttribute="trailing" constant="16" id="kaT-vD-aZm"/>
+                            <constraint firstItem="c6T-Ug-wex" firstAttribute="top" secondItem="Cc5-io-eOM" secondAttribute="top" constant="11" id="sDR-31-yiG"/>
+                            <constraint firstItem="c6T-Ug-wex" firstAttribute="leading" secondItem="qkO-5v-mxi" secondAttribute="trailing" constant="8" id="t4g-RZ-pcX"/>
+                            <constraint firstAttribute="trailing" secondItem="8qu-h3-ZHl" secondAttribute="trailing" constant="-272" id="tKL-Kd-vEc"/>
+                            <constraint firstItem="0ff-D5-rc6" firstAttribute="leading" secondItem="Cc5-io-eOM" secondAttribute="leading" constant="16" id="ufX-Cg-FwZ"/>
+                            <constraint firstItem="3ld-JM-F8M" firstAttribute="top" secondItem="0ff-D5-rc6" secondAttribute="bottom" constant="5" id="vPs-0g-ti4"/>
+                            <constraint firstItem="qkO-5v-mxi" firstAttribute="top" secondItem="Cc5-io-eOM" secondAttribute="top" constant="11" id="xeU-eD-XcX"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Cc5-io-eOM"/>
+                    </view>
+                    <connections>
+                        <outlet property="cora1" destination="qkO-5v-mxi" id="7Zy-jX-545"/>
+                        <outlet property="cora2" destination="c6T-Ug-wex" id="8Tr-NR-fF2"/>
+                        <outlet property="cora3" destination="Ej9-wx-vbq" id="c3f-DQ-Jkk"/>
+                        <outlet property="dialogo" destination="XmZ-MN-qh8" id="IrS-oh-yIQ"/>
+                        <outlet property="dialogo_texto" destination="t9c-pk-bcn" id="UTk-bZ-plK"/>
+                        <outlet property="ecri" destination="0ff-D5-rc6" id="emG-aj-Uut"/>
+                        <outlet property="genio" destination="JX9-xv-BEa" id="iJ9-WQ-foA"/>
+                        <outlet property="number" destination="3ld-JM-F8M" id="Ptc-yk-C6L"/>
+                        <outlet property="salir" destination="aIp-TX-Q0F" id="u3E-Eg-Ums"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6PJ-4s-CYd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2136.8000000000002" y="-656.22188905547227"/>
+        </scene>
+        <!--Inicio View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="InicioViewController" customModule="Adivinator" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="egipto.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="hEe-7u-Dh0">
+                                <rect key="frame" x="0.0" y="64" width="647" height="652"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uhW-Er-eFo" customClass="PressableButton" customModule="SwiftyButton">
+                                <rect key="frame" x="68" y="406" width="238" height="67"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="67" id="4lH-SC-Bdf"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ComicsCarToon" family="ComicsCarToon" pointSize="33"/>
+                                <state key="normal" title="Integrantes">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="G1s-QA-7QC" kind="show" id="emX-WH-6H4"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rmd-d4-eom" customClass="PressableButton" customModule="SwiftyButton">
+                                <rect key="frame" x="68" y="310" width="238" height="67"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="67" id="Wu2-og-SFU"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ComicsCarToon" family="ComicsCarToon" pointSize="33"/>
+                                <state key="normal" title="Jugar">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Eka-xp-nnh" kind="show" id="jKW-YI-gx7"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Adivina El Número Papu :v" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rt3-NF-K5V">
+                                <rect key="frame" x="0.0" y="192" width="375" height="110"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="110" id="IqT-6p-7hd"/>
+                                </constraints>
+                                <color key="textColor" red="0.0" green="0.41886384500000001" blue="0.57780116579999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="ComicsCarToon" family="ComicsCarToon" pointSize="44"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="rmd-d4-eom" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="68" id="8N7-uS-RJE"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="uhW-Er-eFo" secondAttribute="trailing" constant="69" id="Gww-4r-F1i"/>
+                            <constraint firstItem="uhW-Er-eFo" firstAttribute="top" secondItem="rmd-d4-eom" secondAttribute="bottom" constant="29" id="HE1-MF-z5A"/>
+                            <constraint firstItem="rt3-NF-K5V" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="128" id="ISS-u3-jG4"/>
+                            <constraint firstItem="rt3-NF-K5V" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Kef-yU-Xu7"/>
+                            <constraint firstItem="rmd-d4-eom" firstAttribute="top" secondItem="rt3-NF-K5V" secondAttribute="bottom" constant="8" id="NdB-Fc-XTM"/>
+                            <constraint firstItem="hEe-7u-Dh0" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="TTM-fO-pkR"/>
+                            <constraint firstItem="uhW-Er-eFo" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="68" id="cdK-rv-XhI"/>
+                            <constraint firstAttribute="bottom" secondItem="hEe-7u-Dh0" secondAttribute="bottom" constant="-49" id="d36-XA-Wes"/>
+                            <constraint firstItem="hEe-7u-Dh0" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="fgB-fc-f21"/>
+                            <constraint firstAttribute="trailing" secondItem="hEe-7u-Dh0" secondAttribute="trailing" constant="-272" id="gWq-Y2-AQ0"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="rmd-d4-eom" secondAttribute="trailing" constant="69" id="gk4-BN-vkV"/>
+                            <constraint firstItem="rt3-NF-K5V" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="pos-5v-UM2"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" id="ADZ-M2-QcY"/>
+                    <connections>
+                        <outlet property="btn1" destination="rmd-d4-eom" id="Tp4-JW-kTK"/>
+                        <outlet property="btn2" destination="uhW-Er-eFo" id="jFL-29-5uI"/>
+                        <outlet property="view_content" destination="rt3-NF-K5V" id="mb9-Gn-Vje"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1056.8" y="118.29085457271366"/>
+        </scene>
+        <!--Integrantes View Controller-->
+        <scene sceneID="x9B-Xp-0sx">
+            <objects>
+                <viewController id="G1s-QA-7QC" customClass="IntegrantesViewController" customModule="Adivinator" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cuL-oM-X54">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="egipto.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="5eM-4v-lW8">
+                                <rect key="frame" x="0.0" y="64" width="647" height="652"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Oaq-kz-JfV">
+                                <rect key="frame" x="16" y="248" width="343" height="235"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="343" id="Beo-Nf-THG"/>
+                                    <constraint firstAttribute="height" constant="235" id="RE2-7A-M4U"/>
+                                </constraints>
+                                <string key="text">Esteban Rivas                              Jesus Morales                               Luis Mendizabal                             Jose Galindo                                 Gerson Zamora</string>
+                                <fontDescription key="fontDescription" name="ComicsCarToon" family="ComicsCarToon" pointSize="44"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="5eM-4v-lW8" secondAttribute="bottom" constant="-49" id="J2q-Vn-7wP"/>
+                            <constraint firstItem="Oaq-kz-JfV" firstAttribute="centerX" secondItem="5WR-1y-rHN" secondAttribute="centerX" id="KKt-CZ-YYl"/>
+                            <constraint firstItem="Oaq-kz-JfV" firstAttribute="centerY" secondItem="5WR-1y-rHN" secondAttribute="centerY" id="YIg-0B-tne"/>
+                            <constraint firstItem="5eM-4v-lW8" firstAttribute="top" secondItem="5WR-1y-rHN" secondAttribute="top" id="lRB-Tt-NEa"/>
+                            <constraint firstAttribute="trailing" secondItem="5eM-4v-lW8" secondAttribute="trailing" constant="-272" id="nGE-xj-pp1"/>
+                            <constraint firstItem="5eM-4v-lW8" firstAttribute="leading" secondItem="5WR-1y-rHN" secondAttribute="leading" id="sDB-Ku-ZaL"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="5WR-1y-rHN"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ag5-wd-prF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1056.8" y="931.48425787106453"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="wwk-1Q-mWJ">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="OHt-wM-Js8" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="WgY-kd-dsM">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Mm1-Ey-VcK"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mrp-Uu-yOK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-838" y="118"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="cora1.png" width="128" height="128"/>
+        <image name="egipto.jpg" width="626" height="626"/>
+        <image name="genioa.png" width="517" height="517"/>
+        <image name="globo1.png" width="512" height="512"/>
+    </resources>
 </document>

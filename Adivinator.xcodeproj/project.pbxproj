@@ -7,21 +7,67 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		09CE46EBE6BB1FC4FD9C9AF9 /* Pods_Adivinator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BFA4060DC37113D324B97C0 /* Pods_Adivinator.framework */; };
+		90194D16208B024500AAAD4F /* brah.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 90194D15208B024500AAAD4F /* brah.mp3 */; };
+		901E18A62087B82B0049BA3F /* carta2.png in Resources */ = {isa = PBXBuildFile; fileRef = 901E18A02087B82B0049BA3F /* carta2.png */; };
+		901E18A72087B82B0049BA3F /* carta3.png in Resources */ = {isa = PBXBuildFile; fileRef = 901E18A12087B82B0049BA3F /* carta3.png */; };
+		901E18A82087B82B0049BA3F /* carta1.png in Resources */ = {isa = PBXBuildFile; fileRef = 901E18A22087B82B0049BA3F /* carta1.png */; };
+		901E18A92087B82B0049BA3F /* carta4.png in Resources */ = {isa = PBXBuildFile; fileRef = 901E18A32087B82B0049BA3F /* carta4.png */; };
+		901E18AA2087B82B0049BA3F /* carta5.png in Resources */ = {isa = PBXBuildFile; fileRef = 901E18A42087B82B0049BA3F /* carta5.png */; };
+		901E18AB2087B82B0049BA3F /* carta6.png in Resources */ = {isa = PBXBuildFile; fileRef = 901E18A52087B82B0049BA3F /* carta6.png */; };
 		901F025B208560BB00D7FEC3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 901F025A208560BB00D7FEC3 /* AppDelegate.swift */; };
-		901F025D208560BB00D7FEC3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 901F025C208560BB00D7FEC3 /* ViewController.swift */; };
 		901F0260208560BB00D7FEC3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 901F025E208560BB00D7FEC3 /* Main.storyboard */; };
 		901F0262208560BC00D7FEC3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 901F0261208560BC00D7FEC3 /* Assets.xcassets */; };
 		901F0265208560BC00D7FEC3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 901F0263208560BC00D7FEC3 /* LaunchScreen.storyboard */; };
+		9045167E20865A5A0060579C /* InicioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9045167D20865A5A0060579C /* InicioViewController.swift */; };
+		9045168120865B1C0060579C /* ComicsCarToon.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9045168020865B1C0060579C /* ComicsCarToon.ttf */; };
+		9045168320865B2E0060579C /* genioa.png in Resources */ = {isa = PBXBuildFile; fileRef = 9045168220865B2E0060579C /* genioa.png */; };
+		9045168620865B3B0060579C /* cora1.png in Resources */ = {isa = PBXBuildFile; fileRef = 9045168420865B3B0060579C /* cora1.png */; };
+		9045168720865B3B0060579C /* cora2.png in Resources */ = {isa = PBXBuildFile; fileRef = 9045168520865B3B0060579C /* cora2.png */; };
+		9045168A20865B4F0060579C /* globo2.png in Resources */ = {isa = PBXBuildFile; fileRef = 9045168820865B4F0060579C /* globo2.png */; };
+		9045168B20865B4F0060579C /* globo1.png in Resources */ = {isa = PBXBuildFile; fileRef = 9045168920865B4F0060579C /* globo1.png */; };
+		908B57EF20865DF600039E7F /* egipto.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 908B57EE20865DF600039E7F /* egipto.jpg */; };
+		908B57F120865E9500039E7F /* egiptin.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 908B57F020865E9500039E7F /* egiptin.jpg */; };
+		908B57F32086624700039E7F /* wowin.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 908B57F22086624700039E7F /* wowin.jpg */; };
+		908B57F72086671600039E7F /* IntegrantesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 908B57F62086671600039E7F /* IntegrantesViewController.swift */; };
+		908B57F92086672800039E7F /* ModViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 908B57F82086672800039E7F /* ModViewController.swift */; };
+		908B57FB208667C200039E7F /* AdivinaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 908B57FA208667C200039E7F /* AdivinaViewController.swift */; };
+		908B57FD208667D100039E7F /* AdivinoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 908B57FC208667D100039E7F /* AdivinoViewController.swift */; };
+		908B57FF20866CD900039E7F /* grupo.png in Resources */ = {isa = PBXBuildFile; fileRef = 908B57FE20866CD900039E7F /* grupo.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		39DE854FC6B0AE4AD0812CEB /* Pods-Adivinator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Adivinator.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Adivinator/Pods-Adivinator.debug.xcconfig"; sourceTree = "<group>"; };
+		3BFA4060DC37113D324B97C0 /* Pods_Adivinator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Adivinator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		521B1028462756885E3E0311 /* Pods-Adivinator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Adivinator.release.xcconfig"; path = "Pods/Target Support Files/Pods-Adivinator/Pods-Adivinator.release.xcconfig"; sourceTree = "<group>"; };
+		90194D15208B024500AAAD4F /* brah.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = brah.mp3; sourceTree = "<group>"; };
+		901E18A02087B82B0049BA3F /* carta2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = carta2.png; sourceTree = "<group>"; };
+		901E18A12087B82B0049BA3F /* carta3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = carta3.png; sourceTree = "<group>"; };
+		901E18A22087B82B0049BA3F /* carta1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = carta1.png; sourceTree = "<group>"; };
+		901E18A32087B82B0049BA3F /* carta4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = carta4.png; sourceTree = "<group>"; };
+		901E18A42087B82B0049BA3F /* carta5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = carta5.png; sourceTree = "<group>"; };
+		901E18A52087B82B0049BA3F /* carta6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = carta6.png; sourceTree = "<group>"; };
 		901F0257208560BB00D7FEC3 /* Adivinator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Adivinator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		901F025A208560BB00D7FEC3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		901F025C208560BB00D7FEC3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		901F025F208560BB00D7FEC3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		901F0261208560BC00D7FEC3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		901F0264208560BC00D7FEC3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		901F0266208560BC00D7FEC3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9045167D20865A5A0060579C /* InicioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InicioViewController.swift; sourceTree = "<group>"; };
+		9045168020865B1C0060579C /* ComicsCarToon.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = ComicsCarToon.ttf; sourceTree = "<group>"; };
+		9045168220865B2E0060579C /* genioa.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = genioa.png; sourceTree = "<group>"; };
+		9045168420865B3B0060579C /* cora1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cora1.png; sourceTree = "<group>"; };
+		9045168520865B3B0060579C /* cora2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cora2.png; sourceTree = "<group>"; };
+		9045168820865B4F0060579C /* globo2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = globo2.png; sourceTree = "<group>"; };
+		9045168920865B4F0060579C /* globo1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = globo1.png; sourceTree = "<group>"; };
+		908B57EE20865DF600039E7F /* egipto.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = egipto.jpg; sourceTree = "<group>"; };
+		908B57F020865E9500039E7F /* egiptin.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = egiptin.jpg; sourceTree = "<group>"; };
+		908B57F22086624700039E7F /* wowin.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = wowin.jpg; sourceTree = "<group>"; };
+		908B57F62086671600039E7F /* IntegrantesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntegrantesViewController.swift; sourceTree = "<group>"; };
+		908B57F82086672800039E7F /* ModViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModViewController.swift; sourceTree = "<group>"; };
+		908B57FA208667C200039E7F /* AdivinaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdivinaViewController.swift; sourceTree = "<group>"; };
+		908B57FC208667D100039E7F /* AdivinoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdivinoViewController.swift; sourceTree = "<group>"; };
+		908B57FE20866CD900039E7F /* grupo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = grupo.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +75,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				09CE46EBE6BB1FC4FD9C9AF9 /* Pods_Adivinator.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3000850BDEDC01ACCB4A8A0F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3BFA4060DC37113D324B97C0 /* Pods_Adivinator.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		901F024E208560BB00D7FEC3 = {
 			isa = PBXGroup;
 			children = (
+				9045167F20865B060060579C /* Media */,
 				901F0259208560BB00D7FEC3 /* Adivinator */,
 				901F0258208560BB00D7FEC3 /* Products */,
+				D2B0F3708F51B0ABDF0D224D /* Pods */,
+				3000850BDEDC01ACCB4A8A0F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -55,13 +113,50 @@
 			isa = PBXGroup;
 			children = (
 				901F025A208560BB00D7FEC3 /* AppDelegate.swift */,
-				901F025C208560BB00D7FEC3 /* ViewController.swift */,
 				901F025E208560BB00D7FEC3 /* Main.storyboard */,
 				901F0261208560BC00D7FEC3 /* Assets.xcassets */,
 				901F0263208560BC00D7FEC3 /* LaunchScreen.storyboard */,
 				901F0266208560BC00D7FEC3 /* Info.plist */,
+				9045167D20865A5A0060579C /* InicioViewController.swift */,
+				908B57F62086671600039E7F /* IntegrantesViewController.swift */,
+				908B57F82086672800039E7F /* ModViewController.swift */,
+				908B57FA208667C200039E7F /* AdivinaViewController.swift */,
+				908B57FC208667D100039E7F /* AdivinoViewController.swift */,
 			);
 			path = Adivinator;
+			sourceTree = "<group>";
+		};
+		9045167F20865B060060579C /* Media */ = {
+			isa = PBXGroup;
+			children = (
+				90194D15208B024500AAAD4F /* brah.mp3 */,
+				901E18A22087B82B0049BA3F /* carta1.png */,
+				901E18A02087B82B0049BA3F /* carta2.png */,
+				901E18A12087B82B0049BA3F /* carta3.png */,
+				901E18A32087B82B0049BA3F /* carta4.png */,
+				901E18A42087B82B0049BA3F /* carta5.png */,
+				901E18A52087B82B0049BA3F /* carta6.png */,
+				908B57FE20866CD900039E7F /* grupo.png */,
+				908B57F22086624700039E7F /* wowin.jpg */,
+				908B57F020865E9500039E7F /* egiptin.jpg */,
+				908B57EE20865DF600039E7F /* egipto.jpg */,
+				9045168920865B4F0060579C /* globo1.png */,
+				9045168820865B4F0060579C /* globo2.png */,
+				9045168420865B3B0060579C /* cora1.png */,
+				9045168520865B3B0060579C /* cora2.png */,
+				9045168220865B2E0060579C /* genioa.png */,
+				9045168020865B1C0060579C /* ComicsCarToon.ttf */,
+			);
+			path = Media;
+			sourceTree = "<group>";
+		};
+		D2B0F3708F51B0ABDF0D224D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				39DE854FC6B0AE4AD0812CEB /* Pods-Adivinator.debug.xcconfig */,
+				521B1028462756885E3E0311 /* Pods-Adivinator.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +166,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 901F0269208560BC00D7FEC3 /* Build configuration list for PBXNativeTarget "Adivinator" */;
 			buildPhases = (
+				C09BB46563232341C3B24742 /* [CP] Check Pods Manifest.lock */,
 				901F0253208560BB00D7FEC3 /* Sources */,
 				901F0254208560BB00D7FEC3 /* Frameworks */,
 				901F0255208560BB00D7FEC3 /* Resources */,
+				72628F24E855CF7E4A6C63E4 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -122,21 +219,81 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9045168620865B3B0060579C /* cora1.png in Resources */,
 				901F0265208560BC00D7FEC3 /* LaunchScreen.storyboard in Resources */,
+				9045168A20865B4F0060579C /* globo2.png in Resources */,
+				9045168120865B1C0060579C /* ComicsCarToon.ttf in Resources */,
+				901E18AB2087B82B0049BA3F /* carta6.png in Resources */,
+				901E18A62087B82B0049BA3F /* carta2.png in Resources */,
+				908B57F32086624700039E7F /* wowin.jpg in Resources */,
+				9045168320865B2E0060579C /* genioa.png in Resources */,
+				901E18A92087B82B0049BA3F /* carta4.png in Resources */,
+				908B57EF20865DF600039E7F /* egipto.jpg in Resources */,
+				901E18AA2087B82B0049BA3F /* carta5.png in Resources */,
+				90194D16208B024500AAAD4F /* brah.mp3 in Resources */,
+				901E18A72087B82B0049BA3F /* carta3.png in Resources */,
+				901E18A82087B82B0049BA3F /* carta1.png in Resources */,
 				901F0262208560BC00D7FEC3 /* Assets.xcassets in Resources */,
+				9045168B20865B4F0060579C /* globo1.png in Resources */,
+				908B57FF20866CD900039E7F /* grupo.png in Resources */,
+				9045168720865B3B0060579C /* cora2.png in Resources */,
+				908B57F120865E9500039E7F /* egiptin.jpg in Resources */,
 				901F0260208560BB00D7FEC3 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		72628F24E855CF7E4A6C63E4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Adivinator/Pods-Adivinator-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SwiftyButton/SwiftyButton.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyButton.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Adivinator/Pods-Adivinator-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C09BB46563232341C3B24742 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Adivinator-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		901F0253208560BB00D7FEC3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				901F025D208560BB00D7FEC3 /* ViewController.swift in Sources */,
 				901F025B208560BB00D7FEC3 /* AppDelegate.swift in Sources */,
+				908B57FD208667D100039E7F /* AdivinoViewController.swift in Sources */,
+				908B57F92086672800039E7F /* ModViewController.swift in Sources */,
+				908B57FB208667C200039E7F /* AdivinaViewController.swift in Sources */,
+				908B57F72086671600039E7F /* IntegrantesViewController.swift in Sources */,
+				9045167E20865A5A0060579C /* InicioViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,6 +435,7 @@
 		};
 		901F026A208560BC00D7FEC3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 39DE854FC6B0AE4AD0812CEB /* Pods-Adivinator.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -296,6 +454,7 @@
 		};
 		901F026B208560BC00D7FEC3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 521B1028462756885E3E0311 /* Pods-Adivinator.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

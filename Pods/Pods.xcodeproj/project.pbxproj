@@ -1,0 +1,588 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		084DCE42950FCE60562E4CF4AB2FF05F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
+		1EAFD6038F39DB81D247C15D754387BB /* Pods-Adivinator-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8979E65D78281D74E50E21CF0DF6AE99 /* Pods-Adivinator-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		32290B1937679D3913F17D138B401197 /* Pods-Adivinator-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BBFD5654E0BF679FB5D9378D71C8E87 /* Pods-Adivinator-dummy.m */; };
+		3E616D4CBC748622AAC8B05D0A96E618 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B63C6A64CF66340668996F78DA6BB482 /* UIKit.framework */; };
+		7905CE65A2A154BE0726BF0D90892D2F /* CustomPressableButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5674BA5687974355A92026CA50B925D9 /* CustomPressableButton.swift */; };
+		7AE1231B4A5202E157FBAE1F5976CA9B /* SwiftyButton-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 360091445FDDE353697E18FBD4289B86 /* SwiftyButton-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		95FC35BA1EC88C42D6150B4056B2C33E /* SwiftyButton-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ADA9584C4D9BBE233BB483A91026476 /* SwiftyButton-dummy.m */; };
+		9606868663AE2A5E544B7DE360380A6C /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = C38D8F9AC8F20043ED61C73A93968736 /* Utils.swift */; };
+		A5616E4857F3F77E8B0A8B07E524CA30 /* PressableButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 242944BE6DF3E7E07DC9B44D47CA6DB4 /* PressableButton.swift */; };
+		D767D56D4B52AD1EE6939010DFC15AA0 /* FlatButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20DDC81025868EB2BCFE5B688D31DBE2 /* FlatButton.swift */; };
+		F6AD0CBD1ED67017027DAB45E2A92583 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		27722B482263A7106A94C65193F2EA86 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B464800C66D21F4ADFBC6DD475027E82;
+			remoteInfo = SwiftyButton;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0945C0D6B93A64B33199419CE6368479 /* Pods-Adivinator-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Adivinator-frameworks.sh"; sourceTree = "<group>"; };
+		1052425A4D7E605BD821931F21E54899 /* Pods-Adivinator-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Adivinator-acknowledgements.plist"; sourceTree = "<group>"; };
+		1589DE48B55A0AD2FEC4DD883ED347D6 /* Pods-Adivinator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Adivinator.debug.xcconfig"; sourceTree = "<group>"; };
+		1D5DEA31087FC6FE3EB86FCAAFB4FAA9 /* Pods-Adivinator-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Adivinator-acknowledgements.markdown"; sourceTree = "<group>"; };
+		20DDC81025868EB2BCFE5B688D31DBE2 /* FlatButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FlatButton.swift; path = SwiftyButton/FlatButton.swift; sourceTree = "<group>"; };
+		242944BE6DF3E7E07DC9B44D47CA6DB4 /* PressableButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PressableButton.swift; path = SwiftyButton/PressableButton.swift; sourceTree = "<group>"; };
+		2E1922D5122FF564493A414CE6F6A0C2 /* SwiftyButton-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyButton-prefix.pch"; sourceTree = "<group>"; };
+		2FA7AD583FAE5469804951F7CE48C915 /* Pods-Adivinator.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Adivinator.modulemap"; sourceTree = "<group>"; };
+		360091445FDDE353697E18FBD4289B86 /* SwiftyButton-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyButton-umbrella.h"; sourceTree = "<group>"; };
+		39091B74E7F00D392844B1F3FA2ED8FC /* SwiftyButton.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftyButton.xcconfig; sourceTree = "<group>"; };
+		5674BA5687974355A92026CA50B925D9 /* CustomPressableButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CustomPressableButton.swift; path = SwiftyButton/CustomPressableButton.swift; sourceTree = "<group>"; };
+		5890E979E67CA610EF1374BD12DBA819 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5B1ED819FE2124078BEF218C6FCD855A /* Pods-Adivinator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Adivinator.release.xcconfig"; sourceTree = "<group>"; };
+		7554135749253AEEE612FCF9EFDC947D /* SwiftyButton.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwiftyButton.framework; path = SwiftyButton.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8979E65D78281D74E50E21CF0DF6AE99 /* Pods-Adivinator-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Adivinator-umbrella.h"; sourceTree = "<group>"; };
+		8ADA9584C4D9BBE233BB483A91026476 /* SwiftyButton-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftyButton-dummy.m"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9BBFD5654E0BF679FB5D9378D71C8E87 /* Pods-Adivinator-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Adivinator-dummy.m"; sourceTree = "<group>"; };
+		A2794975C7430B4890F6D825C7290869 /* SwiftyButton.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SwiftyButton.modulemap; sourceTree = "<group>"; };
+		A77E521769D924872986C2341EADC2E6 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A8BEBD9F934F4874ED7D0F2779E90BBC /* Pods-Adivinator-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Adivinator-resources.sh"; sourceTree = "<group>"; };
+		B63C6A64CF66340668996F78DA6BB482 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		BB01419C3F5B1048011B8157F44A1B1A /* Pods_Adivinator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Adivinator.framework; path = "Pods-Adivinator.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C38D8F9AC8F20043ED61C73A93968736 /* Utils.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Utils.swift; path = SwiftyButton/Utils.swift; sourceTree = "<group>"; };
+		D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B14EF5EC7048BD3EB5003308F9D1CA6D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6AD0CBD1ED67017027DAB45E2A92583 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EFF3340B7A6E0717F8BC180FF2E503A0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				084DCE42950FCE60562E4CF4AB2FF05F /* Foundation.framework in Frameworks */,
+				3E616D4CBC748622AAC8B05D0A96E618 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		40A9785EEB3D5547931497F1118CE0C7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DF281646EB70A2F0B07BD0E74D50A15F /* SwiftyButton */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		433CD3331B6C3787F473C941B61FC68F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				438B396F6B4147076630CAEFE34282C1 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		438B396F6B4147076630CAEFE34282C1 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */,
+				B63C6A64CF66340668996F78DA6BB482 /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		4CF772F4754B5DA2662B993760F8F6D1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BB01419C3F5B1048011B8157F44A1B1A /* Pods_Adivinator.framework */,
+				7554135749253AEEE612FCF9EFDC947D /* SwiftyButton.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				433CD3331B6C3787F473C941B61FC68F /* Frameworks */,
+				40A9785EEB3D5547931497F1118CE0C7 /* Pods */,
+				4CF772F4754B5DA2662B993760F8F6D1 /* Products */,
+				E627DB589876A2F9E8EB2DEBB18B02ED /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		C0CA6C443B41A053C38421DC18195D77 /* Pods-Adivinator */ = {
+			isa = PBXGroup;
+			children = (
+				A77E521769D924872986C2341EADC2E6 /* Info.plist */,
+				2FA7AD583FAE5469804951F7CE48C915 /* Pods-Adivinator.modulemap */,
+				1D5DEA31087FC6FE3EB86FCAAFB4FAA9 /* Pods-Adivinator-acknowledgements.markdown */,
+				1052425A4D7E605BD821931F21E54899 /* Pods-Adivinator-acknowledgements.plist */,
+				9BBFD5654E0BF679FB5D9378D71C8E87 /* Pods-Adivinator-dummy.m */,
+				0945C0D6B93A64B33199419CE6368479 /* Pods-Adivinator-frameworks.sh */,
+				A8BEBD9F934F4874ED7D0F2779E90BBC /* Pods-Adivinator-resources.sh */,
+				8979E65D78281D74E50E21CF0DF6AE99 /* Pods-Adivinator-umbrella.h */,
+				1589DE48B55A0AD2FEC4DD883ED347D6 /* Pods-Adivinator.debug.xcconfig */,
+				5B1ED819FE2124078BEF218C6FCD855A /* Pods-Adivinator.release.xcconfig */,
+			);
+			name = "Pods-Adivinator";
+			path = "Target Support Files/Pods-Adivinator";
+			sourceTree = "<group>";
+		};
+		D8F1F6452E845D2D1A129C068DC57BDA /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				5890E979E67CA610EF1374BD12DBA819 /* Info.plist */,
+				A2794975C7430B4890F6D825C7290869 /* SwiftyButton.modulemap */,
+				39091B74E7F00D392844B1F3FA2ED8FC /* SwiftyButton.xcconfig */,
+				8ADA9584C4D9BBE233BB483A91026476 /* SwiftyButton-dummy.m */,
+				2E1922D5122FF564493A414CE6F6A0C2 /* SwiftyButton-prefix.pch */,
+				360091445FDDE353697E18FBD4289B86 /* SwiftyButton-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SwiftyButton";
+			sourceTree = "<group>";
+		};
+		DF281646EB70A2F0B07BD0E74D50A15F /* SwiftyButton */ = {
+			isa = PBXGroup;
+			children = (
+				5674BA5687974355A92026CA50B925D9 /* CustomPressableButton.swift */,
+				20DDC81025868EB2BCFE5B688D31DBE2 /* FlatButton.swift */,
+				242944BE6DF3E7E07DC9B44D47CA6DB4 /* PressableButton.swift */,
+				C38D8F9AC8F20043ED61C73A93968736 /* Utils.swift */,
+				D8F1F6452E845D2D1A129C068DC57BDA /* Support Files */,
+			);
+			name = SwiftyButton;
+			path = SwiftyButton;
+			sourceTree = "<group>";
+		};
+		E627DB589876A2F9E8EB2DEBB18B02ED /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				C0CA6C443B41A053C38421DC18195D77 /* Pods-Adivinator */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		E2476F6467A47363DC2F377E2108227E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7AE1231B4A5202E157FBAE1F5976CA9B /* SwiftyButton-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB109385DE602AC32854A1092ED58430 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1EAFD6038F39DB81D247C15D754387BB /* Pods-Adivinator-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		4E704E484C168ECEBA8C56A4BD461140 /* Pods-Adivinator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2AAFB043E6DC2600483AC3DF64866152 /* Build configuration list for PBXNativeTarget "Pods-Adivinator" */;
+			buildPhases = (
+				53F4C7B603ECC4E0AC9C69B0D1FCE7F1 /* Sources */,
+				B14EF5EC7048BD3EB5003308F9D1CA6D /* Frameworks */,
+				EB109385DE602AC32854A1092ED58430 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3AA0729A8623EB3AE60ED69CD11D947C /* PBXTargetDependency */,
+			);
+			name = "Pods-Adivinator";
+			productName = "Pods-Adivinator";
+			productReference = BB01419C3F5B1048011B8157F44A1B1A /* Pods_Adivinator.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		B464800C66D21F4ADFBC6DD475027E82 /* SwiftyButton */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FED65D63F7363F5D5CD17183A9528B5E /* Build configuration list for PBXNativeTarget "SwiftyButton" */;
+			buildPhases = (
+				FE6F70424F7FF84956991A720B33CEBC /* Sources */,
+				EFF3340B7A6E0717F8BC180FF2E503A0 /* Frameworks */,
+				E2476F6467A47363DC2F377E2108227E /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwiftyButton;
+			productName = SwiftyButton;
+			productReference = 7554135749253AEEE612FCF9EFDC947D /* SwiftyButton.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 4CF772F4754B5DA2662B993760F8F6D1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4E704E484C168ECEBA8C56A4BD461140 /* Pods-Adivinator */,
+				B464800C66D21F4ADFBC6DD475027E82 /* SwiftyButton */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		53F4C7B603ECC4E0AC9C69B0D1FCE7F1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				32290B1937679D3913F17D138B401197 /* Pods-Adivinator-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FE6F70424F7FF84956991A720B33CEBC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7905CE65A2A154BE0726BF0D90892D2F /* CustomPressableButton.swift in Sources */,
+				D767D56D4B52AD1EE6939010DFC15AA0 /* FlatButton.swift in Sources */,
+				A5616E4857F3F77E8B0A8B07E524CA30 /* PressableButton.swift in Sources */,
+				95FC35BA1EC88C42D6150B4056B2C33E /* SwiftyButton-dummy.m in Sources */,
+				9606868663AE2A5E544B7DE360380A6C /* Utils.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3AA0729A8623EB3AE60ED69CD11D947C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftyButton;
+			target = B464800C66D21F4ADFBC6DD475027E82 /* SwiftyButton */;
+			targetProxy = 27722B482263A7106A94C65193F2EA86 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		619131537600F80C21956EEA044E8559 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5B1ED819FE2124078BEF218C6FCD855A /* Pods-Adivinator.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Adivinator/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Adivinator/Pods-Adivinator.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		691EE0234A3BA1A3B057D3A4C23C9CCC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		703082A85162812D3B777E668767AD25 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		963BD34C573041BA23B1A618A752BE9D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 39091B74E7F00D392844B1F3FA2ED8FC /* SwiftyButton.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftyButton/SwiftyButton-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftyButton/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SwiftyButton/SwiftyButton.modulemap";
+				PRODUCT_MODULE_NAME = SwiftyButton;
+				PRODUCT_NAME = SwiftyButton;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		A5E5AEACE8D7A566D28B894079A5ADE1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 39091B74E7F00D392844B1F3FA2ED8FC /* SwiftyButton.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftyButton/SwiftyButton-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftyButton/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SwiftyButton/SwiftyButton.modulemap";
+				PRODUCT_MODULE_NAME = SwiftyButton;
+				PRODUCT_NAME = SwiftyButton;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		C15D297F5BEE105A18A963D636836CF5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1589DE48B55A0AD2FEC4DD883ED347D6 /* Pods-Adivinator.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Adivinator/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Adivinator/Pods-Adivinator.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2AAFB043E6DC2600483AC3DF64866152 /* Build configuration list for PBXNativeTarget "Pods-Adivinator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C15D297F5BEE105A18A963D636836CF5 /* Debug */,
+				619131537600F80C21956EEA044E8559 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				691EE0234A3BA1A3B057D3A4C23C9CCC /* Debug */,
+				703082A85162812D3B777E668767AD25 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FED65D63F7363F5D5CD17183A9528B5E /* Build configuration list for PBXNativeTarget "SwiftyButton" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A5E5AEACE8D7A566D28B894079A5ADE1 /* Debug */,
+				963BD34C573041BA23B1A618A752BE9D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
